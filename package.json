@@ -1,0 +1,13 @@
+{
+  "name": "fetch-and-load-data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^5.4.0",
+    "axios": "^0.21.1",
+    "dotenv": "^16.4.5"
+  }
+}

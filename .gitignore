@@ -1,0 +1,11 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore .env file for environment variables
+.env
+
+# Ignore the .gitignore file itself (this is optional, but not typically recommended)
+# .gitignore
+
+# Ignore the BigQuery service account key file
+service-account-key.json
