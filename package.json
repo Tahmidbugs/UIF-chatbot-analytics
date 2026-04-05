@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:dry": "ANALYTICS_DRY_RUN=1 node index.js 2>&1 | tee logs.log",
+    "previous:dry": "ANALYTICS_DRY_RUN=1 node index.js 2>&1 | tee logs.log",
+    "current:real": "node index.js 2>&1 | tee logs.log",
+    "probe:usage": "node scripts/voiceflow-usage-probe.js",
+    "backfill:eval": "node index.js backfill-eval",
+    "delete:recent": "node index.js delete-recent"
   },
   "dependencies": {
     "@google-cloud/bigquery": "^5.4.0",
